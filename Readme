@@ -1,0 +1,6 @@
+    #Foma para gerar um builder pela lib buildermaster
+    ===================================================
+    public static void main(String[] args) {
+        new BuilderMaster().gerarCodigoClasse(Locacao.class);
+    }
+    ====================================================
