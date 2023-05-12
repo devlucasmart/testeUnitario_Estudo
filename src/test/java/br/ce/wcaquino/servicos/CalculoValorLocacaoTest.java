@@ -65,10 +65,12 @@ public class CalculoValorLocacaoTest {
         //verificacao
         //4+4+3+2+1=14
         assertThat(resultado.getValor(), is(valorLocacao));
+
     }
 
     @Test
     public void print() {
+
         System.out.println(valorLocacao);
     }
 }
