@@ -1,9 +1,6 @@
 package br.ce.wcaquino.entidades;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Objects;
 
@@ -11,6 +8,8 @@ import java.util.Objects;
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
+@EqualsAndHashCode
 public class Usuario {
 	private String nome;
 	@Override
