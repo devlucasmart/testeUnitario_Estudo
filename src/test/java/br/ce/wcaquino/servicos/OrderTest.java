@@ -9,6 +9,7 @@ import org.junit.runners.MethodSorters;
 public class OrderTest {
 
     public static int contador = 0;
+
     @Test
     public void inicia() {
         contador = 1;

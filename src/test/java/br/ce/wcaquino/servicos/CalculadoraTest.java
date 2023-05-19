@@ -14,6 +14,7 @@ public class CalculadoraTest {
     public void setup() {
         calc = new Calculadora();
     }
+
     @Test
     public void deveSomarDoisValores() {
         //Cenario
@@ -33,7 +34,7 @@ public class CalculadoraTest {
         int a = 5;
         int b = 3;
         //acao
-        int resultado = calc.subtrair(a,b);
+        int resultado = calc.subtrair(a, b);
 
         //verificacao
         Assert.assertEquals(2, resultado);
@@ -45,19 +46,19 @@ public class CalculadoraTest {
         int a = 4;
         int b = 2;
         //acao
-        int resultado = calc.dividir(a,b);
+        int resultado = calc.dividir(a, b);
 
         //verificacao
         Assert.assertEquals(2, resultado);
     }
 
     @Test(expected = NaoPodeDividirPorZeroException.class)
-    public void DeveLancarExcecaoAoDividirPorZero() throws NaoPodeDividirPorZeroException{
+    public void DeveLancarExcecaoAoDividirPorZero() throws NaoPodeDividirPorZeroException {
         //Cenario
         int a = 4;
         int b = 0;
 
         //acao
-        calc.dividir(a,b);
+        calc.dividir(a, b);
     }
 }
