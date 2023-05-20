@@ -63,7 +63,6 @@ public class LocacaoBuilder {
     }
 
     public Locacao agora() {
-
         return locacao;
     }
     public LocacaoBuilder atrasado(){
